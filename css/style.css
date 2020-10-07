@@ -16,7 +16,7 @@ a{
 
 .nav ul li {
     display: inline;
-   
+
 }
 
 
@@ -39,6 +39,7 @@ a{
     padding-left: 25px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+
 }
 
 .subnav ul li {
@@ -67,3 +68,12 @@ a{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.login {
+    color: #717171;
+    text-align: right;
+    padding: 15px;
+    margin: 0px;
+    justify-content: end;
+}
+
