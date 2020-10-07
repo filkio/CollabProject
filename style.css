@@ -1,4 +1,47 @@
-h1
-{
-    color: red; /* Цвет настроения красный */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.subnav {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.subnav ul li {
+    display: inline;
+    padding-left: 20px;
+}
+
+.subnav a {
+    color: #333333;
+}
+
+.main {
+  height: 700px;
+  background-image: url("photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
