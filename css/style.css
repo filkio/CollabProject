@@ -5,21 +5,24 @@
 a{
     text-decoration: none;
 }
+li
+{
+    list-style-type: none;
+}
+
+/*main navigation*/
 .nav {
     background-color: #333333;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 20px;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
 }
 
-.nav ul li {
-    display: inline;
-
+.nav ul
+{
+display: grid;
+grid-template-columns: repeat(20,1fr);
 }
-
-
 .nav a {
     color: white;
     padding: 20px;
@@ -32,48 +35,49 @@ a{
     border-style: solid;
     border-radius: 45px;
 }
-.subnav {
+
+/*sub navigation*/
+.fullsubnav
+{
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+}
+.subnav, .subnavlogin {
     color: white;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 25px;
+    padding: 15px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 
 }
-
-.subnav ul li {
-    display: inline;
-    padding-left: 0px;
+.subnav ul{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
-.subnav a:hover {
+.subnavlogin ul
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-self: center;
+}
+.subnav a:hover, .subnavlogin a:hover {
     background: rgb(212, 212, 212);
     border-color: white;
     border-width: 0px;
     border-style: solid;
     border-radius: 25px;
 }
-
-.subnav a {
+.subnav a, .subnavlogin a{
     color: #333333;
     padding: 15px;
     margin: 0px;
     transition: 0.6s;
 }
 
+/*main content*/
 .main {
-  height: 700px;
-  background-image: url("/res/photo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.login {
-    color: #717171;
-    text-align: right;
-    padding: 15px;
-    margin: 0px;
-    justify-content: end;
-}
-
+    height: 700px;
+    background-image: url("/res/photo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
