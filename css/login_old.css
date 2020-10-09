@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.nav {
+    background-color: #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav ul li {
+    display: inline;
+   
+}
+
+
+.nav a {
+    color: white;
+    padding: 20px;
+    transition: 0.7s;
+}
+.nav a:hover {
+    background: rgb(70, 70, 70);
+    border-color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 45px;
+}
+.subnav {
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.subnav ul li {
+    display: inline;
+    padding-left: 0px;
+}
+.subnav a:hover {
+    background: rgb(212, 212, 212);
+    border-color: white;
+    border-width: 0px;
+    border-style: solid;
+    border-radius: 25px;
+}
+
+.subnav a {
+    color: #333333;
+    padding: 15px;
+    margin: 0px;
+    transition: 0.6s;
+}
+
+.main {
+margin-left: 20px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  padding-left: 10%;
+}
+.formname
+{
+    color: rgb(63, 63, 63);
+    font-size: 30px;
+}
+.formfull
+{
+font-family: 'Roboto', sans-serif;
+background: rgb(231, 231, 231);
+width: 500px;
+border-style: solid;
+border-width: 2px;
+border-color: rgb(145, 145, 145);
+border-radius: 18px;
+text-align: center;
+line-height: 30px;
+display: inline-block;
+margin-left: 100px;
+margin-top: 100px;
+}
+.form
+{
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 0px;
+}
+.label
+{
+    color: rgb(63, 63, 63);
+    font-size: 20px;
+    cursor: pointer;
+}
+input
+{
+    width: 200px;
+    height: 22px;
+    font-size: 20px;
+    color: rgb(63, 63, 63);
+    background: rgb(206, 204, 204);
+    border-radius: 8px;
+    padding: 3px 2px;
+}
+.formbutton
+{
+    margin: 0;
+    padding: 0;
+    width: 210px;
+    height: 60px;
+    transition: 0.2s;
+}
+.formbutton:hover
+{
+    color: rgb(255, 255, 255);
+}

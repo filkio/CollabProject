@@ -39,15 +39,14 @@ if (pass!==pass2)
     fail+="Пароли не совпадают\n";
 }
 
-if (fail!=="")  //если ошибка не пустая, выводим ошибку
+if (fail!=="")
 {
     alert(fail);
 }
 else            //иначе TODO: это отпрвляется на сервер. (php/Go/asp.net)
 {
-    document.getElementById("form").style.display = "none";
-    document.getElementById("formname").style.color = "green";
-    document.getElementById("formname").textContent = "Письмо отправлено на почтовый ящик";
+document.getElementById("form").style.display = "none";
+document.getElementById("ty").style.display = "block";
 }
 }
 
@@ -73,26 +72,14 @@ if (pass.length < 8)
 {
     fail+="Пароль должен составлять 8 и более символов\n";
 }
+
+
 if (fail!=="")
 {
     alert(fail);
 }
 else            //иначе TODO: это отпрвляется на сервер. (php/Go/asp.net)
 {
-document.getElementById("form2").style.display = "none";
-document.getElementById("formname2").style.color = "green";
-document.getElementById("formname2").textContent = "Вход выполнен успешно! "+3;
-let counter = 2;
-let id = setInterval(MyInterval, 1000);
-function MyInterval()
-{
-    if(counter<1)
-    {
-        window.location = "/index.html";
-    }
-    document.getElementById("formname2").textContent = "Вход выполнен успешно! "+counter;
-    counter--;
-}
-
+window.location = "index.html";
 }
 }

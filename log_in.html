@@ -3,94 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Регистрация и вход</title>
+    <!--Десктоп-->
+    <link rel="stylesheet" href="css/bigBlankTemplate.css">
+    <!--Мобильные-->
+    <link rel="stylesheet" href="css/smallBlankTemplate.css" media="(max-device-width: 1000px)">
+    <title>Вход</title>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="football.html">Футбол</a></li>
-            <li><a href="hockey.html">Хоккей</a></li>
-            <li><a href="basketball.html">Баскетбол</a></li>
-            <li><a href="avto.html">Авто</a></li>
-            <li><a href="tennis.html">Теннис</a></li>
-            <li><a href="mma.html">MMA/Единоброства</a></li>
-        </ul>
+    <div class="button-burger">
+        <input type="button" onclick="showMenu()" value="_">
     </div>
-
-    <div class="subnav">
-        <ul>
-            <li><a href="">Матч-центр</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">YouTube</a></li>
-            <li><a href="">Блоги</a></li>
-            <li><a href="">Подкасты</a></li>
-        </ul>
-    </div>
-
-    <div class="main">
-        <div class="formfull">
-            <span class="formname" id="formname">Регистрация</span>
-            <div class="form">
-                
-                <form id="form" method="POST">
-                    <div>
-                        <!--for в лейбле указывает, на какой id мы прыгнем при нажатии на лейбл-->
-                        <!--id указывает id-->
-                        <!--name используется для js, для вытаскивания инфы с документа-->
-                        <label class="label" for="Name">Ваше имя:</label>
-                        <input type="text" id="Name" name="Name" placeholder="имя">
-                    </div>
-                    <div>
-                        <label class="label" for="EMail">Ваш EMail:</label>
-                        <input type="email" id="EMail" name="EMail" placeholder="email">
-                    </div>
-                    <div>
-                        <label class="label" for="pass">Ваш пароль:</label>
-                        <input type="password" id="pass" name="pass" placeholder="пароль">
-                    </div>
-                    <div>
-                        <label class="label" for="pass2">Повторите пароль:</label>
-                        <input type="password" id="pass2" name="pass2" placeholder="повторите пароль">
-                    </div>
-                    <div>
-                        <label class="label" for="sexm">Мужской</label>
-                        <input class="radio" type="radio" id="sexm" name="state" id="state" value="Мужской" checked />
-                    </div>
-                    <div>
-                        <label class="label" for="sexf">Женский</label>
-                        <input class="radio" type="radio" id="sexf" name="state" id="state" value="Женский" />
-                    </div>
-                    <div>
-                        <input class="formbutton" type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Регистрация" />
-                        <!-- При нажати на кнопку в js-функцию valid попадет форма, к которой мы обратились по id-->
-                    </div>
-                </form>
+    <div class="grid-container">
+        <div class="nav1" id="nav1">
+            <div class="button-main">
+                <a href="index.html">Главная</a>
+            </div>
+            <div class="button-football">
+                <a href="football.html">Футбол</a>
+            </div>
+            <div class="button-hockey">
+                <a href="hockey.html">Хоккей</a>
+            </div>
+            <div class="button-basketball">
+                <a href="basketball.html">Баскетбол</a>
+            </div>
+            <div class="button-auto">
+                <a href="avto.html">Авто</a>
+            </div>
+            <div class="button-tennis">
+                <a href="tennis.html">Теннис</a>
+            </div>
+            <div class="button-mma">
+                <a href="mma.html">ММА/Единоборства</a>
             </div>
         </div>
-        <div class="formfull">
-            <span class="formname" id="formname2">Вход</span>
-            <div class="form">
-                
-                <form id="form2" method="POST">
-                    <div>
-                        <label class="label" for="EMail">Ваш EMail:</label>
-                        <input type="email" id="EMail" name="EMail" placeholder="email">
-                    </div>
-                    <div>
-                        <label class="label" for="pass">Ваш пароль:</label>
-                        <input type="password" id="pass" name="pass" placeholder="пароль">
-                    </div>
-                    <div>
-                        <input class="formbutton" type="button" onclick="valid2(document.getElementById('form2'))" name="submit" value="Войти" />
-                        <!-- При нажати на кнопку в js-функцию valid попадет форма, к которой мы обратились по id-->
-                    </div>
-                </form>
+        <div class="nav2" id="nav2">
+            <div class="button-matchcenter">
+                <a href="">Матч-центр</a>
+            </div>
+            <div class="button-news">
+                <a href="">Новости</a>
+            </div>
+            <div class="button-youtube">
+                <a href="">YouTube</a>
+            </div>
+            <div class="button-blogs">
+                <a href="">Блоги</a>
+            </div>
+            <div class="button-podkasts">
+                <a href="">Подкасты</a>
+            </div>
+            <div class="button-registration">
+                <a href="register.html">Регистрация</a>
+            </div>
+            <div class="button-login">
+                <a href="log_in.html">Вход</a>
             </div>
         </div>
+        <div class="main">
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+
+        </div>
+        <div class="footer">
+            подвал
+        </div>
     </div>
-    <script src="js/log_in.js"></script>
+    <script src="js/burgerScript.js"></script>
 </body>
 </html>

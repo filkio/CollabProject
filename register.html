@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Десктоп-->
     <link rel="stylesheet" href="css/bigBlankTemplate.css">
+    <link rel="stylesheet" href="css/login.css">
     <!--Мобильные-->
     <link rel="stylesheet" href="css/smallBlankTemplate.css" media="(max-device-width: 1000px)">
-    <title>Главная</title>
+    <title>Регистрация</title>
 </head>
 <body>
     <div class="button-burger">
@@ -61,20 +62,44 @@
             </div>
         </div>
         <div class="main">
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
-                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
-                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+            <h3 id="ty">Письмо отправлено на почту!</h3>
+            <form id="form" method="POST">
+
+                    <!--for в лейбле указывает, на какой id мы прыгнем при нажатии на лейбл-->
+                    <!--id указывает id-->
+                    <!--name используется для js, для вытаскивания инфы с документа-->
+
+                    <label class="label1 label" for="Name">Ваше имя:</label>
+                    <input class="input1 input" type="text" id="Name" name="Name" placeholder="имя">
+
+
+                    <label class="label2 label" for="EMail">Ваш EMail:</label>
+                    <input class="input2 input" type="email" id="EMail" name="EMail" placeholder="email">
+
+
+                    <label class="label3 label" for="pass">Ваш пароль:</label>
+                    <input class="input3 input" type="password" id="pass" name="pass" placeholder="пароль">
+
+
+                    <label class="label4 label" for="pass2">Повторите пароль:</label>
+                    <input class="input4 input" type="password" id="pass2" name="pass2" placeholder="повторите пароль">
+
+
+                    <label class="label5 label" for="sexm">Мужской</label>
+                    <input class="input5 input" type="radio" id="sexm" name="state" id="state" value="Мужской" checked />
+
+
+                    <label class="label6 label" for="sexf">Женский</label>
+                    <input class="input6 input" type="radio" id="sexf" name="state" id="state" value="Женский" />
+
+
+                    <input class="formbutton" type="button" onclick="valid(document.getElementById('form'))" name="submit" value="Регистрация" />
+                    <!-- При нажати на кнопку в js-функцию valid попадет форма, к которой мы обратились по id-->
+                    <div class="log_in">
+                        Есть аккаунт? <a href="log_in.html">Войти.</a>
+                    </div>
+            </form>
+        </div>
 
         </div>
         <div class="footer">
@@ -82,5 +107,6 @@
         </div>
     </div>
     <script src="js/burgerScript.js"></script>
+    <script src="js/log_in.js"></script>
 </body>
 </html>
