@@ -1,0 +1,54 @@
+.grid-container
+{
+    font-size: 1em;
+}
+.nav1, .nav2
+{
+grid-template-columns: 5px auto 5px;;
+grid-template-rows: repeat(7,auto);
+display: none;
+}
+.button-main, .button-matchcenter
+{
+grid-area: 1/2/2/3;
+}
+.button-football, .button-news
+{
+grid-area: 2/2/3/3;
+}
+.button-hockey, .button-youtube
+{
+grid-area: 3/2/4/3;
+}
+.button-basketball, .button-blogs
+{
+grid-area: 4/2/5/3;
+}
+.button-auto, .button-podkasts
+{
+grid-area: 5/2/6/3;
+}
+.button-tennis, .button-registration
+{
+grid-area: 6/2/7/3;
+}
+.button-mma, .button-login
+{
+grid-area: 7/2/8/3;
+}
+.button-burger
+{
+    display: block;
+    text-align: center;
+}
+.button-burger input
+{
+    padding: 2em;
+    background: transparent;
+    border-style: none;
+    background-image: url("../res/burger_menu_icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
