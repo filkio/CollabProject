@@ -3,35 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/tennis.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Теннис</title>
+    <!--Десктоп-->
+    <link rel="stylesheet" href="css/bigBlankTemplate.css">
+    <!--Мобильные-->
+    <link rel="stylesheet" href="css/smallBlankTemplate.css" media="(max-device-width: 1000px)">
+    <title>CSS grid</title>
 </head>
 <body>
-    <div class="nav">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="football.html">Футбол</a></li>
-            <li><a href="hockey.html">Хоккей</a></li>
-            <li><a href="basketball.html">Баскетбол</a></li>
-            <li><a href="avto.html">Авто</a></li>
-            <li><a href="tennis.html">Теннис</a></li>
-            <li><a href="mma.html">MMA/Единоброства</a></li>
-        </ul>
+    <div class="button-burger">
+        <input type="button" onclick="showMenu()" value="_">
     </div>
+    <div class="grid-container">
+        <div class="nav1" id="nav1">
+            <div class="button-main">
+                <a href="index.html">Главная</a>
+            </div>
+            <div class="button-football">
+                <a href="football.html">Футбол</a>
+            </div>
+            <div class="button-hockey">
+                <a href="hockey.html">Хоккей</a>
+            </div>
+            <div class="button-basketball">
+                <a href="basketball.html">Баскетбол</a>
+            </div>
+            <div class="button-auto">
+                <a href="avto.html">Авто</a>
+            </div>
+            <div class="button-tennis">
+                <a href="tennis.html">Теннис</a>
+            </div>
+            <div class="button-mma">
+                <a href="mma.html">ММА/Единоборства</a>
+            </div>
+        </div>
+        <div class="nav2" id="nav2">
+            <div class="button-matchcenter">
+                <a href="">Матч-центр</a>
+            </div>
+            <div class="button-news">
+                <a href="">Новости</a>
+            </div>
+            <div class="button-youtube">
+                <a href="">YouTube</a>
+            </div>
+            <div class="button-blogs">
+                <a href="">Блоги</a>
+            </div>
+            <div class="button-podkasts">
+                <a href="">Подкасты</a>
+            </div>
+            <div class="button-registration">
+                <a href="log_in.html">Регистрация</a>
+            </div>
+            <div class="button-login">
+                <a href="log_in.html">Вход</a>
+            </div>
+        </div>
+        <div class="main">
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
+                РЕДАКТИРОВАТЬ ЭТОТ БЛОК
+                В ЭТОМ БЛОКЕ НАХОДИТСЯ ПОЛНЫЙ КОНТЕНТ СТРАНИЦЫ
 
-    <div class="subnav">
-        <ul>
-            <li><a href="">Матч-центр</a></li>
-            <li><a href="">Новости</a></li>
-            <li><a href="">YouTube</a></li>
-            <li><a href="">Блоги</a></li>
-            <li><a href="">Подкасты</a></li>
-        </ul>
+        </div>
+        <div class="footer">
+            подвал
+        </div>
     </div>
-
-    <div class="main">
-
-    </div>
+    <script src="js/burgerScript.js"></script>
 </body>
 </html>
