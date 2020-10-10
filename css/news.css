@@ -1,0 +1,64 @@
+
+p{
+    text-indent: 2em;
+    line-height: 2em;
+    text-align: left;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+   }
+.main
+{
+    display: grid;
+    grid-template-columns: 1em 1.3fr 1em 5fr 4em;
+    grid-template-rows: 1em repeat(2,min-content) 1em; 
+    background: transparent;
+}
+.news-headline
+{
+    grid-area: 2/4/3/5;
+    background: rgb(201, 195, 195);
+    font-size: 2em;
+    text-align: left;
+    text-indent: 1em;
+    padding: 1em;
+    font-weight: 700;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+}
+.news
+{
+    grid-area: 3/4/4/5;
+    background: rgb(201, 195, 195);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+
+}
+.headlines
+{
+    grid-area: 3/2/4/3;
+    display: grid;
+    row-gap: 2em;
+    text-align: start;
+    overflow-y: auto;
+    height: 35em;
+}
+.headline
+{
+    background: rgba(212, 211, 211, 0.623);
+    padding: 1.2em;
+    text-indent: 1em;
+    line-height: 1.4em;
+    border-radius: 0.6em;
+}
+.headline a
+{
+    white-space: normal;
+    color: black;
+    transition: 0.3s;
+
+}
+.headline a:hover
+{
+    color:white;
+}
